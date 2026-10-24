@@ -62,7 +62,6 @@ class CopyFiles {
         t2.join();
         long parTime = System.nanoTime() - startPar;
 
-        // 3. Результаты
         System.out.println("Последовательно: " + seqTime / 1_000_000.0 + " мс");
         System.out.println("Параллельно:     " + parTime / 1_000_000.0 + " мс");
         System.out.println(parTime < seqTime ? "Параллельное копирование быстрее" : "Последовательное копирование быстрее");
